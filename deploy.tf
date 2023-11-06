@@ -1,5 +1,4 @@
 # Setup AWS provider
-
 terraform {
     required_providers {
       aws = {
@@ -11,8 +10,8 @@ terraform {
 
 provider "aws" {
     region = "eu-west-2"
-    access_key = "INSERT_AWS_ACCESS_KEY" # Replace this value with AWS IAM Account Access Key
-    secret_key = "INSERT_SECRET" # Replace this value with AWS IAM Account Secret
+    access_key = var.access_key # defined in secrets.tf
+    secret_key = var.secret_key # defined in secrets.tf
 }
 
 # Create an IAM Role that will let lambda to access DynamoDB
@@ -80,3 +79,15 @@ resource "aws_lambda_function_url" "dynamic_string_updater_url" {
   function_name      = aws_lambda_function.dynamic_string_updater.arn
   authorization_type = "NONE"
 }
+
+# Output the Dynamic String HTML Page URL
+output "output_dynamic_string_html_url" {
+  value = aws_lambda_function_url.dynamic_string_html_url.function_url
+}
+
+# Output the Dynamic String Updater URL
+output "output_dynamic_string_updater_url" {
+  value = aws_lambda_function_url.dynamic_string_updater_url.function_url
+}
+
+

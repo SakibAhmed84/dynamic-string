@@ -44,3 +44,12 @@
 - If the first URL is now refreshed the page will show a Message: The saved string is: hello-world
 
 - To change the string Dynamically just repeat the step with a new string value.
+
+# Udate:
+
+As of 05/11/2023 it is no longer required to perform the first two steps i.e. running the terraform state show command in order to retrieve the URLs. They are now displayed on screen after the TF apply is performed using Output function.
+
+Example: 
+
+output_dynamic_string_html_url    = "https://xxxx.lambda-url.eu-west-2.on.aws/"
+output_dynamic_string_updater_url = "https://abcd.lambda-url.eu-west-2.on.aws/"
