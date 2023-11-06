@@ -51,5 +51,5 @@ As of 05/11/2023 it is no longer required to perform the first two steps i.e. ru
 
 Example: 
 
-output_dynamic_string_html_url    = "https://xxxx.lambda-url.eu-west-2.on.aws/"
-output_dynamic_string_updater_url = "https://abcd.lambda-url.eu-west-2.on.aws/"
+- output_dynamic_string_html_url    = "https://xxxx.lambda-url.eu-west-2.on.aws/"
+- output_dynamic_string_updater_url = "https://abcd.lambda-url.eu-west-2.on.aws/"
