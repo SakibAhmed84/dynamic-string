@@ -47,7 +47,9 @@
 
 # Change Log:
 
-As of 05/11/2023 it is no longer required to perform the first two steps i.e. running the terraform state show command in order to retrieve the URLs. They are now displayed on screen after the TF apply is performed using Output function.
+05/11/2023 
+AWS Access Key and Secrets are now defined in the secrets.tf file to mask them from the main deploy.tf file. secrets.tf has been added to .gitignore
+It is no longer required to perform the first two steps i.e. running the terraform state show command in order to retrieve the URLs. They are now displayed on screen after the TF apply is performed using Output function.
 
 Example: 
 
