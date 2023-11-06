@@ -53,3 +53,5 @@ Example:
 
 - output_dynamic_string_html_url    = "https://xxxx.lambda-url.eu-west-2.on.aws/"
 - output_dynamic_string_updater_url = "https://abcd.lambda-url.eu-west-2.on.aws/"
+
+The outputs are kept in the state file therefore can be called anytime using the command "terraform output". It is a handy feature to obtain the URLs in the future very easily. 
