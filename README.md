@@ -45,7 +45,7 @@
 
 - To change the string Dynamically just repeat the step with a new string value.
 
-# Udate:
+# Change Log:
 
 As of 05/11/2023 it is no longer required to perform the first two steps i.e. running the terraform state show command in order to retrieve the URLs. They are now displayed on screen after the TF apply is performed using Output function.
 
